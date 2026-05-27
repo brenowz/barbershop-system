@@ -225,6 +225,20 @@ section h2 {
   margin-top: 25px;
 }
 
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn img {
+  width: 42px;
+  height: 32px;
+
+  position: relative;
+  top: 9px;
+}
+
 /* FOOTER */
 
 footer {
