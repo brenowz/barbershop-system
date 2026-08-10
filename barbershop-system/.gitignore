@@ -1,0 +1,13 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Futuro Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
