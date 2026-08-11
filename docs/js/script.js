@@ -1,6 +1,6 @@
 const services = {
     cortes: {
-        image: "imgs/corte-simples.jpeg",
+        image: "imgs/corte-simples.png",
 
         items: [
             { name: "Corte Simples", price: "R$ 25" },
@@ -10,7 +10,7 @@ const services = {
     },
 
     barba: {
-        image: "imgs/corte-barba.jpeg",
+        image: "imgs/corte-barba.png",
 
         items: [
             { name: "Cavanhaque", price: "R$ 7" },
@@ -22,7 +22,7 @@ const services = {
     },
 
     coloracao: {
-        image: "imgs/corte-coloracao.jpeg",
+        image: "imgs/corte-coloracao.png",
 
         items: [
             { name: "Nevou", price: "R$ 85", from: true },
@@ -31,7 +31,7 @@ const services = {
     },
 
     combos: {
-        image: "imgs/corte-combos.jpeg",
+        image: "imgs/corte-combos.png",
 
         items: [
             { name: "Corte Simples + Sobrancelha", price: "R$ 30" },
