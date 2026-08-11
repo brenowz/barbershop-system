@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Serviços, preços e informações da Mauro Cortes.">
+    <title>Mauro Cortes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="#" class="logo" aria-label="Mauro Cortes - início">
+    <img src="imgs/logo.png" alt="Logo Mauro Cortes">
+</a>
+</a>
+            </a>
+
+            <a href="#agendamento" class="header-button">Agendar</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <p class="eyebrow">BARBEARIA</p>
+                <h1>Mauro Cortes</h1>
+                <p class="hero-text">
+                    Serviços, preços e atendimento sem complicação.
+                </p>
+
+                <a href="#servicos" class="secondary-link">Ver serviços</a>
+            </div>
+        </section>
+
+        <section class="services-section" id="servicos">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">TABELA DE PREÇOS</p>
+                    <h2>Serviços</h2>
+                    <p>Escolha uma categoria para consultar os valores.</p>
+                </div>
+
+                <div class="category-buttons" aria-label="Categorias de serviços">
+                    <button class="category-button active" data-category="cortes">Cortes</button>
+                    <button class="category-button" data-category="barba">Barba & Acabamentos</button>
+                    <button class="category-button" data-category="coloracao">Coloração</button>
+                    <button class="category-button" data-category="combos">Combos</button>
+                </div>
+
+                <div class="service-list" id="service-list"></div>
+            </div>
+        </section>
+
+        <section class="booking-section" id="agendamento">
+            <div class="container booking-card">
+                <div>
+                    <p class="eyebrow">AGENDAMENTO</p>
+                    <h2>Quer marcar um horário?</h2>
+                    <p>Em breve, o agendamento poderá ser feito diretamente pelo site.</p>
+                </div>
+
+                <button class="booking-button" type="button" disabled>
+                    Agendar horário
+                </button>
+
+                <small>Funcionalidade em desenvolvimento.</small>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="imgs/logo.png" alt="Logo Mauro Cortes">
+                </div>
+
+                <strong>Mauro Cortes</strong>
+                <p>Cortes, barba e acabamento.</p>
+            </div>
+
+            <div class="footer-info">
+                <div>
+                    <h3>Horários</h3>
+                    <p>Segunda a sábado</p>
+                    <p>Á definir</p>
+                </div>
+
+                <div>
+                    <h3>Contato</h3>
+                    <p>WhatsApp: (00) 00000-0000</p>
+                    <p>Instagram: @maurocortesf</p>
+                </div>
+
+                <div>
+                    <h3>Endereço</h3>
+                    <a href="https://maps.app.goo.gl/zQnCDeunT6uKWLCv8"
+                    target="_blank" rel="noopener noreferrer"
+                    class="footer-link">
+                        <p><strong>Ver no mapa →</strong> <br>
+                            R. Jorn. Regina Célia Santana Dias, 10 - Canabrava, Salvador - BA, 41260-045</p>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container copyright">
+            <p>© 2026 Mauro Cortes.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,393 @@
+/* =========================
+   BASE
+========================= */
+
+:root {
+    --bg: #101210;
+    --surface: #191c19;
+    --surface-light: #202420;
+    --text: #f2f2ed;
+    --muted: #a6aaa2;
+    --border: #2b302b;
+    --olive: #7d8b63;
+    --olive-hover: #8e9d70;
+    --max-width: 960px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font: inherit;
+}
+
+.container {
+    width: min(100% - 32px, var(--max-width));
+    margin-inline: auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.site-header {
+    border-bottom: 1px solid var(--border);
+    background: rgba(16, 18, 16, 0.96);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-content {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.logo-placeholder {
+    width: 92px;
+    height: 44px;
+    border: 1px dashed var(--olive);
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    color: var(--olive);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.logo img {
+    display: block;
+    width: 110px;
+    height: auto;
+}
+
+.header-button {
+    background: var(--olive);
+    color: #11130f;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.header-button:hover {
+    background: var(--olive-hover);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    padding: 72px 0 56px;
+}
+
+.eyebrow {
+    color: var(--olive);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    margin-bottom: 10px;
+}
+
+.hero h1,
+.section-heading h2,
+.booking-card h2 {
+    font-family: "Barlow Condensed", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.hero h1 {
+    font-size: clamp(3.25rem, 14vw, 6rem);
+    line-height: 0.92;
+    max-width: 700px;
+}
+
+.hero-text {
+    color: var(--muted);
+    font-size: 1rem;
+    margin-top: 20px;
+    max-width: 460px;
+}
+
+.secondary-link {
+    display: inline-block;
+    margin-top: 24px;
+    color: var(--text);
+    font-weight: 600;
+    border-bottom: 1px solid var(--olive);
+    padding-bottom: 4px;
+}
+
+
+/* =========================
+   SERVIÇOS
+========================= */
+
+.services-section {
+    padding: 56px 0 72px;
+}
+
+.section-heading {
+    margin-bottom: 28px;
+}
+
+.section-heading h2 {
+    font-size: 2.7rem;
+}
+
+.section-heading > p:last-child {
+    color: var(--muted);
+    margin-top: 6px;
+}
+
+.category-buttons {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    scrollbar-width: thin;
+}
+
+.category-button {
+    flex: 0 0 auto;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text);
+    border-radius: 999px;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+.category-button:hover {
+    border-color: var(--olive);
+}
+
+.category-button.active {
+    background: var(--olive);
+    color: #11130f;
+    border-color: var(--olive);
+    font-weight: 700;
+}
+
+.service-list {
+    margin-top: 22px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    background: var(--surface);
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 18px;
+}
+
+.service-item + .service-item {
+    border-top: 1px solid var(--border);
+}
+
+.service-name {
+    font-weight: 600;
+}
+
+.service-price {
+    color: var(--olive);
+    font-weight: 700;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.service-price span {
+    color: var(--muted);
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 500;
+}
+
+.category-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+
+/* =========================
+   AGENDAMENTO
+========================= */
+
+.booking-section {
+    padding-bottom: 72px;
+}
+
+.booking-card {
+    background: var(--surface-light);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px;
+}
+
+.booking-card h2 {
+    font-size: 2.2rem;
+}
+
+.booking-card p:not(.eyebrow) {
+    color: var(--muted);
+    margin-top: 6px;
+    max-width: 500px;
+}
+
+.booking-button {
+    width: 100%;
+    margin-top: 22px;
+    border: 0;
+    border-radius: 8px;
+    background: var(--olive);
+    color: #11130f;
+    padding: 14px 18px;
+    font-weight: 700;
+}
+
+.booking-button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.booking-card small {
+    display: block;
+    color: var(--muted);
+    margin-top: 10px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+    border-top: 1px solid var(--border);
+    padding: 48px 0 28px;
+}
+
+.footer-content {
+    display: grid;
+    gap: 36px;
+}
+
+.footer-brand strong {
+    display: block;
+    margin-top: 16px;
+    font-size: 1.1rem;
+}
+
+.footer-brand p,
+.footer-info p,
+.copyright {
+    color: var(--muted);
+}
+
+.footer-logo img {
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.footer-info {
+    display: grid;
+    gap: 28px;
+}
+
+.footer-info h3 {
+    color: var(--olive);
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.footer-info p + p {
+    margin-top: 4px;
+}
+
+.copyright {
+    border-top: 1px solid var(--border);
+    margin-top: 36px;
+    padding-top: 20px;
+    font-size: 0.82rem;
+}
+
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 700px) {
+    .hero {
+        padding: 100px 0 80px;
+        .category-image {
+        aspect-ratio: 16 / 9;}
+    }
+
+    .services-section {
+        padding: 72px 0 88px;
+    }
+
+    .service-item {
+        padding: 20px 24px;
+    }
+
+    .booking-card {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .booking-button {
+        width: auto;
+        min-width: 180px;
+        margin-top: 0;
+    }
+
+    .booking-card small {
+        grid-column: 1 / -1;
+    }
+
+    .footer-content {
+        grid-template-columns: 0.8fr 2fr;
+    }
+
+    .footer-info {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
