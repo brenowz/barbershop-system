@@ -1,5 +1,5 @@
 /* =========================
-   BASE
+   global settings
 ========================= */
 
 :root {
@@ -47,7 +47,7 @@ button {
 
 
 /* =========================
-   HEADER
+   header configs
 ========================= */
 
 .site-header {
@@ -99,7 +99,7 @@ button {
 
 
 /* =========================
-   HERO
+   main session // hero
 ========================= */
 
 .hero {
@@ -146,7 +146,7 @@ button {
 
 
 /* =========================
-   SERVIÇOS
+   services
 ========================= */
 
 .services-section {
@@ -243,7 +243,7 @@ button {
 
 
 /* =========================
-   AGENDAMENTO
+   booking session
 ========================= */
 
 .booking-section {
@@ -291,7 +291,7 @@ button {
 
 
 /* =========================
-   FOOTER
+   footer
 ========================= */
 
 .site-footer {
@@ -347,7 +347,7 @@ button {
 
 
 /* =========================
-   DESKTOP
+   desktop
 ========================= */
 
 @media (min-width: 700px) {
