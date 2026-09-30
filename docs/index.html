@@ -1,123 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Serviços, preços e informações da Mauro Cortes.">
-    <title>Mauro Cortes</title>
-<!-- first 2 preconnect and third the real one -->
+    <title>Mauro Cortes | Barbearia</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
-<!-- site header -->
+<body>
     <header class="site-header">
         <div class="container header-content">
-            <a href="#" class="logo" aria-label="Mauro Cortes - início">
-    <img src="imgs/logo.png" alt="Logo Mauro Cortes">
-</a>
-</a>
+            <a href="#" class="logo">
+                <img src="imgs/logo.png" alt="Mauro Cortes">
             </a>
 
-            <a href="#agendamento" class="header-button">Agendar</a>
+            <a href="#booking" class="header-button">Agendar</a>
         </div>
     </header>
-<!-- worst header oat. -->
+
     <main>
         <section class="hero">
             <div class="container">
-                <p class="eyebrow">BARBEARIA</p>
+                <span class="eyebrow">BARBEARIA</span>
+
                 <h1>Mauro Cortes</h1>
+
                 <p class="hero-text">
-                    Serviços, preços e atendimento sem complicação.
+                    Corte, barba e estilo do seu jeito.
                 </p>
 
-                <a href="#servicos" class="secondary-link">Ver serviços</a>
+                <a href="#services" class="secondary-link">Ver serviços</a>
             </div>
         </section>
-<!-- main session (services and prices) -->
-        <section class="services-section" id="servicos">
+
+        <section class="services-section" id="services">
             <div class="container">
                 <div class="section-heading">
-                    <p class="eyebrow">TABELA DE PREÇOS</p>
+                    <span class="eyebrow">O QUE FAZEMOS</span>
                     <h2>Serviços</h2>
-                    <p>Categorias para consultar os valores:</p>
                 </div>
 
-                <div class="category-buttons" aria-label="Categorias de serviços">
-                    <button class="category-button active" data-category="cortes">Cortes</button>
-                    <button class="category-button" data-category="barba">Barba & Acabamentos</button>
-                    <button class="category-button" data-category="coloracao">Coloração</button>
-                    <button class="category-button" data-category="combos">Combos</button>
-                </div>
+                <nav class="category-buttons">
+                    <button class="category-button active" data-category="cortes">
+                        Cortes
+                    </button>
+
+                    <button class="category-button" data-category="barba">
+                        Barba
+                    </button>
+
+                    <button class="category-button" data-category="coloracao">
+                        Coloração
+                    </button>
+
+                    <button class="category-button" data-category="combos">
+                        Combos
+                    </button>
+                </nav>
 
                 <div class="service-list" id="service-list"></div>
             </div>
         </section>
 
-        <section class="booking-section" id="agendamento">
-            <div class="container booking-card">
-                <div>
-                    <p class="eyebrow">AGENDAMENTO</p>
-                    <h2>Quer marcar um horário?</h2>
-                    <p>Em breve, o agendamento poderá ser feito diretamente pelo site.</p>
+        <section class="booking-section" id="booking">
+            <div class="container">
+                <div class="booking-card">
+                    <div>
+                        <span class="eyebrow">HORÁRIOS</span>
+
+                        <h2>Agende seu horário</h2>
+
+                        <p>
+                            Em breve você poderá escolher o serviço,
+                            dia e horário diretamente pelo site.
+                        </p>
+                    </div>
+
+                    <button class="booking-button" disabled>
+                        Agendamento em breve
+                    </button>
+
+                    <small>
+                        O sistema de agendamento está em desenvolvimento.
+                    </small>
                 </div>
-
-                <button class="booking-button" type="button" disabled>
-                    Agendar horário
-                </button>
-
-                <small>Funcionalidade em desenvolvimento.</small>
             </div>
         </section>
     </main>
-<!-- site footer -->
+
     <footer class="site-footer">
         <div class="container footer-content">
             <div class="footer-brand">
-                <div class="footer-logo">
-                    <img src="imgs/logo.png" alt="Logo Mauro Cortes">
-                </div>
+                <img src="imgs/logo.png" alt="Mauro Cortes" class="footer-logo">
 
                 <strong>Mauro Cortes</strong>
-                <p>Cortes, barba e acabamento.</p>
+
+                <p>Barbearia</p>
             </div>
-<!-- make contact session -->
+
             <div class="footer-info">
                 <div>
                     <h3>Horários</h3>
-                    <p>Segunda a sábado</p>
-                    <p>Á definir</p>
+                    <p>A definir</p>
                 </div>
 
                 <div>
                     <h3>Contato</h3>
-                    <p>WhatsApp: (71) 99184-6150</p>
-                    <p>Instagram: @maurocortesf</p>
+                    <p>(00) 00000-0000</p>
                 </div>
 
                 <div>
                     <h3>Endereço</h3>
-                    <a href="https://maps.app.goo.gl/zQnCDeunT6uKWLCv8"
-                    target="_blank" rel="noopener noreferrer"
-                    class="footer-link">
-                        <p><strong>Ver no mapa →</strong> <br>
-                            R. Jorn. Regina Célia Santana Dias, 10 - Canabrava, Salvador - BA, 41260-045</p>
-
-                    </a>
+                    <p>Salvador - BA</p>
                 </div>
+            </div>
+
+            <div class="footer-links">
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">Localização</a>
             </div>
         </div>
 
-        <div class="container copyright">
-            <p>© 2026 Mauro Cortes.</p>
+        <div class="container">
+            <p class="copyright">
+                © 2026 Mauro Cortes. Todos os direitos reservados.
+            </p>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
 </body>
+
 </html>

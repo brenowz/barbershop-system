@@ -59,37 +59,25 @@ button {
 }
 
 .header-content {
-    min-height: 72px;
+    min-height: 64px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 24px;
 }
 
-.logo-placeholder {
-    width: 92px;
-    height: 44px;
-    border: 1px dashed var(--olive);
-    border-radius: 8px;
-    display: grid;
-    place-items: center;
-    color: var(--olive);
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-}
-
 .logo img {
     display: block;
-    width: 110px;
+    width: 100px;
     height: auto;
 }
 
 .header-button {
     background: var(--olive);
     color: #11130f;
-    padding: 10px 18px;
-    border-radius: 8px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
     font-weight: 700;
 }
 
@@ -103,15 +91,14 @@ button {
 ========================= */
 
 .hero {
-    padding: 72px 0 56px;
+    padding: 64px 0 48px;
 }
 
 .eyebrow {
     color: var(--olive);
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.14em;
-    margin-bottom: 10px;
 }
 
 .hero h1,
@@ -126,22 +113,23 @@ button {
     font-size: clamp(3.25rem, 14vw, 6rem);
     line-height: 0.92;
     max-width: 700px;
+    margin-top: 6px;
 }
 
 .hero-text {
     color: var(--muted);
     font-size: 1rem;
-    margin-top: 20px;
+    margin-top: 14px;
     max-width: 460px;
 }
 
 .secondary-link {
     display: inline-block;
-    margin-top: 24px;
+    margin-top: 20px;
     color: var(--text);
     font-weight: 600;
     border-bottom: 1px solid var(--olive);
-    padding-bottom: 4px;
+    padding-bottom: 3px;
 }
 
 
@@ -150,57 +138,61 @@ button {
 ========================= */
 
 .services-section {
-    padding: 56px 0 72px;
+    padding: 48px 0 64px;
 }
 
 .section-heading {
-    margin-bottom: 28px;
+    margin-bottom: 20px;
 }
 
 .section-heading h2 {
     font-size: 2.7rem;
-}
-
-.section-heading > p:last-child {
-    color: var(--muted);
-    margin-top: 6px;
+    line-height: 1;
+    margin-top: 3px;
 }
 
 .category-buttons {
     display: flex;
-    gap: 8px;
+    gap: 20px;
     overflow-x: auto;
     padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
     scrollbar-width: thin;
 }
 
 .category-button {
     flex: 0 0 auto;
-    border: 1px solid var(--border);
+    border: 0;
+    border-bottom: 2px solid transparent;
     background: transparent;
-    color: var(--text);
-    border-radius: 999px;
-    padding: 10px 14px;
+    color: var(--muted);
+    padding: 0 0 9px;
     cursor: pointer;
+    font-size: 0.9rem;
 }
 
 .category-button:hover {
-    border-color: var(--olive);
+    color: var(--text);
 }
 
 .category-button.active {
-    background: var(--olive);
-    color: #11130f;
-    border-color: var(--olive);
+    color: var(--text);
+    border-bottom-color: var(--olive);
     font-weight: 700;
 }
 
 .service-list {
-    margin-top: 22px;
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    overflow: hidden;
+    margin-top: 18px;
     background: var(--surface);
+}
+
+.category-image {
+    width: 100%;
+    aspect-ratio: 16 / 8;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin-bottom: 6px;
 }
 
 .service-item {
@@ -208,15 +200,15 @@ button {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    padding: 18px;
+    padding: 13px 15px;
 }
 
-.service-item + .service-item {
+.service-item+.service-item {
     border-top: 1px solid var(--border);
 }
 
 .service-name {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .service-price {
@@ -229,16 +221,8 @@ button {
 .service-price span {
     color: var(--muted);
     display: block;
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     font-weight: 500;
-}
-
-.category-image {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    object-position: center;
-    display: block;
 }
 
 
@@ -247,18 +231,19 @@ button {
 ========================= */
 
 .booking-section {
-    padding-bottom: 72px;
+    padding-bottom: 56px;
 }
 
 .booking-card {
     background: var(--surface-light);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 24px;
+    border-left: 3px solid var(--olive);
+    padding: 20px;
 }
 
 .booking-card h2 {
     font-size: 2.2rem;
+    line-height: 1;
+    margin-top: 4px;
 }
 
 .booking-card p:not(.eyebrow) {
@@ -269,12 +254,12 @@ button {
 
 .booking-button {
     width: 100%;
-    margin-top: 22px;
+    margin-top: 18px;
     border: 0;
-    border-radius: 8px;
+    border-radius: 5px;
     background: var(--olive);
     color: #11130f;
-    padding: 14px 18px;
+    padding: 12px 18px;
     font-weight: 700;
 }
 
@@ -286,7 +271,7 @@ button {
 .booking-card small {
     display: block;
     color: var(--muted);
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 
@@ -296,18 +281,18 @@ button {
 
 .site-footer {
     border-top: 1px solid var(--border);
-    padding: 48px 0 28px;
+    padding: 40px 0 22px;
 }
 
 .footer-content {
     display: grid;
-    gap: 36px;
+    gap: 28px;
 }
 
 .footer-brand strong {
     display: block;
-    margin-top: 16px;
-    font-size: 1.1rem;
+    margin-top: 10px;
+    font-size: 1rem;
 }
 
 .footer-brand p,
@@ -316,8 +301,8 @@ button {
     color: var(--muted);
 }
 
-.footer-logo img {
-    width: 180px;
+.footer-logo {
+    width: 145px;
     max-width: 100%;
     height: auto;
     display: block;
@@ -325,24 +310,38 @@ button {
 
 .footer-info {
     display: grid;
-    gap: 28px;
+    gap: 20px;
 }
 
 .footer-info h3 {
     color: var(--olive);
-    font-size: 0.9rem;
-    margin-bottom: 8px;
+    font-size: 0.8rem;
+    margin-bottom: 4px;
 }
 
-.footer-info p + p {
+.footer-info p+p {
     margin-top: 4px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    color: var(--text);
 }
 
 .copyright {
     border-top: 1px solid var(--border);
-    margin-top: 36px;
-    padding-top: 20px;
-    font-size: 0.82rem;
+    margin-top: 28px;
+    padding-top: 16px;
+    font-size: 0.78rem;
 }
 
 
@@ -351,25 +350,28 @@ button {
 ========================= */
 
 @media (min-width: 700px) {
+
     .hero {
-        padding: 100px 0 80px;
-        .category-image {
-        aspect-ratio: 16 / 9;}
+        padding: 88px 0 64px;
     }
 
     .services-section {
-        padding: 72px 0 88px;
+        padding: 64px 0 72px;
+    }
+
+    .category-image {
+        aspect-ratio: 16 / 7;
     }
 
     .service-item {
-        padding: 20px 24px;
+        padding: 15px 20px;
     }
 
     .booking-card {
         display: grid;
         grid-template-columns: 1fr auto;
         align-items: center;
-        gap: 24px;
+        gap: 20px;
     }
 
     .booking-button {
@@ -389,5 +391,8 @@ button {
     .footer-info {
         grid-template-columns: repeat(3, 1fr);
     }
-}
 
+    .footer-links {
+        grid-column: 2;
+    }
+}
