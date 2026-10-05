@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -19,8 +19,6 @@
             <a href="#" class="logo" aria-label="Mauro Cortes - início">
                 <img src="imgs/logo.png" alt="Logo Mauro Cortes">
             </a>
-
-            <a href="#agendamento" class="header-button">Agendar</a>
         </div>
     </header>
 
@@ -64,27 +62,10 @@
                 </div>
                 
                 <div class="gallery-scroll">
-                    <!-- Substitua as imagens abaixo pelas suas fotos reais -->
                     <div class="gallery-item"><img src="imgs/corte-simples.png" alt="Trabalho 1" loading="lazy"></div>
                     <div class="gallery-item"><img src="imgs/corte-barba.png" alt="Trabalho 2" loading="lazy"></div>
                     <div class="gallery-item"><img src="imgs/corte-coloracao.png" alt="Trabalho 3" loading="lazy"></div>
                 </div>
-            </div>
-        </section>
-
-        <section class="booking-section" id="agendamento">
-            <div class="container booking-card">
-                <div>
-                    <p class="eyebrow">AGENDAMENTO</p>
-                    <h2>Quer marcar um horário?</h2>
-                    <p>Em breve, o agendamento poderá ser feito diretamente pelo site.</p>
-                </div>
-
-                <button class="booking-button" type="button" disabled>
-                    Agendar horário
-                </button>
-
-                <small>Funcionalidade em desenvolvimento.</small>
             </div>
         </section>
     </main>
@@ -104,7 +85,7 @@
                 <div>
                     <h3>Horários</h3>
                     <p>Segunda a sábado</p>
-                    <p>Á definir</p>
+                    <p>A definir</p>
                 </div>
 
                 <div>
@@ -152,7 +133,7 @@
                     <span>Total:</span>
                     <strong>R$ <span id="cart-total">0,00</span></strong>
                 </div>
-                <button id="btn-generate-pix" class="booking-button" disabled>Gerar PIX Copia e Cola</button>
+                <button id="btn-generate-pix" class="primary-button" disabled>Gerar PIX Copia e Cola</button>
                 
                 <div id="pix-result" class="pix-result" style="display: none;">
                     <p>Copie o código abaixo e pague na sua app do banco:</p>
@@ -163,6 +144,6 @@
         </div>
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

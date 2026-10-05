@@ -7,7 +7,6 @@ const services = {
             { name: "Corte Tesoura", price: "R$ 35", from: true }
         ]
     },
-
     barba: {
         image: "imgs/corte-barba.png",
         items: [
@@ -18,7 +17,6 @@ const services = {
             { name: "Pezinho", price: "R$ 8" }
         ]
     },
-
     coloracao: {
         image: "imgs/corte-coloracao.png",
         items: [
@@ -26,7 +24,6 @@ const services = {
             { name: "Luzes", price: "R$ 75", from: true }
         ]
     },
-
     combos: {
         image: "imgs/corte-combos.png",
         items: [
