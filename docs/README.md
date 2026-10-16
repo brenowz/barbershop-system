@@ -1,49 +1,49 @@
 # 💈 Mauro Barbershop — Full Stack Order & Management System
 
-A full-stack web application built for **Mauro Barbershop**, featuring an interactive client-side service catalog with dynamic cart management, automated Pix payment checkout, and an administrative back-end dashboard for real-time payment tracking and catalog updates.
+A complete full-stack web system developed for **Mauro´s Barbershop**, featuring an interactive client-side service catalog with dynamic cart management, automated Pix payment checkout, and an administrative back-end dashboard for real-time order tracking and dynamic catalog updates.
 
 ---
 
-### 🌐 Live Application & Resources
+### 🌐 Application Links
 
 - **Web Application:** [Mauro Barbershop Site](https://brenowz.github.io/barbershop-system)
 - **API Documentation:** [FastAPI Interactive Swagger Docs](https://mauro-barbershop-api.onrender.com/docs)
 
 ---
 
-### 🚀 Key Features
+### 🚀 System Modules & Features
 
-#### 🌐 Client Application (Front-end)
-- **Dynamic Service Catalog:** Browse haircut, beard, and combo services with up-to-date pricing and descriptions.
-- **Interactive Shopping Cart:**
-  - Add and remove services dynamically with real-time total price calculation.
-  - Cart state persistence using browser `localStorage`.
-  - Floating cart item counter badge and empty-state user feedback.
-- **Automated Pix Checkout:** Instant generation of Pix QR Code and One-Click Copy-and-Paste payment keys.
+#### 🌐 Client Web Module
+- **Dynamic Service Catalog:** Real-time display of haircut, beard, and combo services with up-to-date pricing.
+- **Interactive Cart & Order Flow:**
+  - Dynamic service selection with real-time total calculation.
+  - Cart state persistence via browser `localStorage`.
+  - Floating badge counter and visual order feedback.
+- **Automated Pix Checkout:** Instant Pix QR Code generation and One-Click Copy-and-Paste payment key.
 
-#### 🔐 Administrative Dashboard (Back-end & Management)
-- **Real-Time Payment Tracking:** Live list displaying verified client payments and order history.
-- **Dynamic Catalog Management:** Admin interface to update service names, availability, and prices directly in the database without code redeployment.
+#### 🔐 Administrative Dashboard
+- **Order & Payment Tracking:** Real-time monitoring of verified client payments and order history.
+- **Catalog Management:** Dynamic interface allowing administrators to update service prices and details directly in the database.
 
 ---
 
-### 🛠️ Tech Stack
+### 🛠️ Tech Stack & Infrastructure
 
 - **Front-end:** HTML5, CSS3, JavaScript (ES6+ / Fetch API, LocalStorage)
 - **Back-end:** Python, FastAPI, SQLAlchemy
 - **Database:** PostgreSQL / SQLite
-- **Deployment:** GitHub Pages (Front-end), Render (FastAPI & Database)
+- **Cloud Infrastructure:** GitHub Pages (Front-end), Render (FastAPI & Database)
 
 ---
 
-### 🔄 System Workflow
+### 🔄 System Architecture
 
-`Client Front-End (Cart & Pix)` ➔ `FastAPI REST API (Python)` ➔ `PostgreSQL Database` ➔ `Admin Dashboard`
+`Client Web Front-End` ➔ `FastAPI REST API (Python)` ➔ `PostgreSQL Database` ➔ `Admin Dashboard`
 
 ---
 
-### 💻 Local Development
+### 👤 Author & Maintainer
 
-1. **Clone & Open Front-end:**
-   ```bash
-   git clone [https://github.com/brenowz/barbershop-system.git](https://github.com/brenowz/barbershop-system.git)
+**Breno Barros** — Backend & Software Engineering  
+- **LinkedIn:** [linkedin.com/in/brenobarrosdev](https://linkedin.com/in/brenobarrosdev)  
+- **GitHub:** [@brenowz](https://github.com/brenowz)
