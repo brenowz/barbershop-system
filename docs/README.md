@@ -1,40 +1,40 @@
-# Mauro Cortes - Barbershop System
+# 💈 Mauro Barbershop — Full Stack Order & Management System
 
-Projeto web da barbearia Mauro Cortes.
+A full-stack web application designed for **Mauro´s Barbershop**, featuring an interactive client-side service catalog with dynamic cart management, automated Pix payment checkout, and an administrative back-end dashboard for real-time payment tracking and catalog updates.
 
-## Etapa atual
+---
 
-Landing page responsiva com:
+### 🌐 Live Demo
 
-- tabela de preços por categoria;
-- layout mobile-first;
-- identidade visual escura com verde oliva;
-- espaço reservado para logo;
-- área futura de agendamento.
+- **Client Web Application:** [Mauro Barbershop Live Site](https://brenowz.github.io/mauro-barbershop)
+- **REST API Documentation:** [FastAPI Interactive Swagger Docs](https://mauro-barbershop-api.onrender.com/docs)
 
-## Estrutura
+---
 
-```text
-barbershop-system/
-└── frontend/
-    ├── index.html
-    ├── css/
-    │   └── style.css
-    ├── js/
-    │   └── script.js
-    └── img/
-```
+### 🚀 Key Features
 
-## Como executar
+#### 🌐 Client Application (Front-end)
+- **Dynamic Service Catalog:** Browse haircut, beard, and combo services with up-to-date pricing and descriptions.
+- **Interactive Shopping Cart:**
+  - Add and remove services dynamically with real-time total price calculation.
+  - Cart state persistence using browser `localStorage`.
+  - Floating cart item counter badge and empty-state user feedback.
+- **Automated Pix Checkout:** Instant generation of Pix QR Code and One-Click Copy-and-Paste payment keys.
 
-Abra `frontend/index.html` no navegador.
+#### 🔐 Administrative Dashboard (Back-end & Management)
+- **Real-Time Payment Tracking:** Live list displaying verified client payments and order history.
+- **Dynamic Catalog Management:** Admin interface to update service names, availability, and prices directly in the database without code redeployment.
 
-Para desenvolvimento no VS Code, a extensão Live Server pode facilitar o recarregamento automático.
+---
 
-## Próximos passos
+### 🛠️ Tech Stack & Architecture
 
-- inserir logo real;
-- ajustar informações reais de contato e horário;
-- validar tabela de preços com o cliente;
-- definir o fluxo de agendamento;
-- adicionar backend e banco de dados.
+- **Front-end:** HTML5, CSS3, JavaScript (ES6+ / Fetch API, DOM Manipulation, LocalStorage)
+- **Back-end:** Python, FastAPI, SQLAlchemy
+- **Database:** PostgreSQL / SQLite
+- **Deployment & Cloud:** GitHub Pages (Front-end hosting), Render (FastAPI & Database)
+- **Security & Standards:** RESTful API design, CORS Middleware, Environment Variables (`.env`)
+
+---
+
+### 🏛️ System Architecture Workflow
