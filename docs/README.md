@@ -1,6 +1,6 @@
 # 💈 Mauro Barbershop — Full Stack Order & Management System
 
-A full-stack web application designed for **Mauro´s Barbershop**, featuring an interactive client-side service catalog with dynamic cart management, automated Pix payment checkout, and an administrative back-end dashboard for real-time payment tracking and catalog updates.
+A full-stack web application designed for **Mauro Barbershop**, featuring an interactive client-side service catalog with dynamic cart management, automated Pix payment checkout, and an administrative back-end dashboard for real-time payment tracking and catalog updates.
 
 ---
 
@@ -27,14 +27,23 @@ A full-stack web application designed for **Mauro´s Barbershop**, featuring an 
 
 ---
 
-### 🛠️ Tech Stack & Architecture
+### 🛠️ Tech Stack
 
-- **Front-end:** HTML5, CSS3, JavaScript (ES6+ / Fetch API, DOM Manipulation, LocalStorage)
+- **Front-end:** HTML5, CSS3, JavaScript (ES6+ / Fetch API, LocalStorage)
 - **Back-end:** Python, FastAPI, SQLAlchemy
 - **Database:** PostgreSQL / SQLite
-- **Deployment & Cloud:** GitHub Pages (Front-end hosting), Render (FastAPI & Database)
-- **Security & Standards:** RESTful API design, CORS Middleware, Environment Variables (`.env`)
+- **Deployment:** GitHub Pages (Front-end), Render (FastAPI & Database)
 
 ---
 
-### 🏛️ System Architecture Workflow
+### 🔄 System Workflow
+
+`Client Front-End (Cart & Pix)` ➔ `FastAPI REST API (Python)` ➔ `PostgreSQL Database` ➔ `Admin Dashboard`
+
+---
+
+### 💻 Local Development
+
+1. **Clone & Open Front-end:**
+   ```bash
+   git clone [https://github.com/brenowz/mauro-barbershop.git](https://github.com/brenowz/mauro-barbershop.git)
