@@ -1,40 +1,49 @@
-# Mauro Cortes - Barbershop System
+# 💈 Mauro Barbershop — Full Stack Order & Management System
 
-Projeto web da barbearia Mauro Cortes.
+A complete full-stack web system developed for **Mauro´s Barbershop**, featuring an interactive client-side service catalog with dynamic cart management, automated Pix payment checkout, and an administrative back-end dashboard for real-time order tracking and dynamic catalog updates.
 
-## Etapa atual
+---
 
-Landing page responsiva com:
+### 🌐 Application Links
 
-- tabela de preços por categoria;
-- layout mobile-first;
-- identidade visual escura com verde oliva;
-- espaço reservado para logo;
-- área futura de agendamento.
+- **Web Application:** [Mauro Barbershop Site](https://brenowz.github.io/barbershop-system)
+- **API Documentation:** [FastAPI Interactive Swagger Docs](https://mauro-barbershop-api.onrender.com/docs)
 
-## Estrutura
+---
 
-```text
-barbershop-system/
-└── frontend/
-    ├── index.html
-    ├── css/
-    │   └── style.css
-    ├── js/
-    │   └── script.js
-    └── img/
-```
+### 🚀 System Modules & Features
 
-## Como executar
+#### 🌐 Client Web Module
+- **Dynamic Service Catalog:** Real-time display of haircut, beard, and combo services with up-to-date pricing.
+- **Interactive Cart & Order Flow:**
+  - Dynamic service selection with real-time total calculation.
+  - Cart state persistence via browser `localStorage`.
+  - Floating badge counter and visual order feedback.
+- **Automated Pix Checkout:** Instant Pix QR Code generation and One-Click Copy-and-Paste payment key.
 
-Abra `frontend/index.html` no navegador.
+#### 🔐 Administrative Dashboard
+- **Order & Payment Tracking:** Real-time monitoring of verified client payments and order history.
+- **Catalog Management:** Dynamic interface allowing administrators to update service prices and details directly in the database.
 
-Para desenvolvimento no VS Code, a extensão Live Server pode facilitar o recarregamento automático.
+---
 
-## Próximos passos
+### 🛠️ Tech Stack & Infrastructure
 
-- inserir logo real;
-- ajustar informações reais de contato e horário;
-- validar tabela de preços com o cliente;
-- definir o fluxo de agendamento;
-- adicionar backend e banco de dados.
+- **Front-end:** HTML5, CSS3, JavaScript (ES6+ / Fetch API, LocalStorage)
+- **Back-end:** Python, FastAPI, SQLAlchemy
+- **Database:** PostgreSQL / SQLite
+- **Cloud Infrastructure:** GitHub Pages (Front-end), Render (FastAPI & Database)
+
+---
+
+### 🔄 System Architecture
+
+`Client Web Front-End` ➔ `FastAPI REST API (Python)` ➔ `PostgreSQL Database` ➔ `Admin Dashboard`
+
+---
+
+### 👤 Author & Maintainer
+
+**Breno Barros** — Backend & Software Engineering  
+- **LinkedIn:** [linkedin.com/in/brenobarrosdev](https://linkedin.com/in/brenobarrosdev)  
+- **GitHub:** [@brenowz](https://github.com/brenowz)
