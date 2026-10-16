@@ -1,13 +1,13 @@
 # 💈 Mauro Barbershop — Full Stack Order & Management System
 
-A full-stack web application designed for **Mauro Barbershop**, featuring an interactive client-side service catalog with dynamic cart management, automated Pix payment checkout, and an administrative back-end dashboard for real-time payment tracking and catalog updates.
+A full-stack web application built for **Mauro Barbershop**, featuring an interactive client-side service catalog with dynamic cart management, automated Pix payment checkout, and an administrative back-end dashboard for real-time payment tracking and catalog updates.
 
 ---
 
-### 🌐 Live Demo
+### 🌐 Live Application & Resources
 
-- **Client Web Application:** [Mauro Barbershop Live Site](https://brenowz.github.io/mauro-barbershop)
-- **REST API Documentation:** [FastAPI Interactive Swagger Docs](https://mauro-barbershop-api.onrender.com/docs)
+- **Web Application:** [Mauro Barbershop Site](https://brenowz.github.io/barbershop-system)
+- **API Documentation:** [FastAPI Interactive Swagger Docs](https://mauro-barbershop-api.onrender.com/docs)
 
 ---
 
@@ -46,4 +46,4 @@ A full-stack web application designed for **Mauro Barbershop**, featuring an int
 
 1. **Clone & Open Front-end:**
    ```bash
-   git clone [https://github.com/brenowz/mauro-barbershop.git](https://github.com/brenowz/mauro-barbershop.git)
+   git clone [https://github.com/brenowz/barbershop-system.git](https://github.com/brenowz/barbershop-system.git)
