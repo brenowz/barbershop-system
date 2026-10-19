@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Admin - Barbearia Mauro Cortes</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-body">
+
+    <!-- TELA DE LOGIN -->
+    <div id="login-screen" class="login-container">
+        <h2>Painel Barbeiro</h2>
+        <div class="form-group">
+            <label for="admin-user">Utilizador</label>
+            <input type="text" id="admin-user" placeholder="Ex: mauro">
+        </div>
+        <div class="form-group">
+            <label for="admin-pass">Palavra-passe</label>
+            <input type="password" id="admin-pass" placeholder="••••••••">
+        </div>
+        <button id="btn-login" class="btn-admin">Entrar</button>
+        <p id="login-error" class="login-error">Utilizador ou palavra-passe incorretos!</p>
+    </div>
+
+    <!-- DASHBOARD DE CONSULTA DE PAGAMENTOS -->
+    <div id="dashboard-screen" class="dashboard-container">
+        <header class="admin-header">
+            <h1>Mauro Cortes — Consulta de Pagamentos PIX</h1>
+            <button id="btn-logout" class="btn-logout">Sair</button>
+        </header>
+
+        <!-- CARDS DE MÉTRICAS -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h4>Total Registrado</h4>
+                <p id="stat-total-count">0</p>
+            </div>
+            <div class="stat-card">
+                <h4>Valor Total em PIX</h4>
+                <p id="stat-total-val">R$ 0,00</p>
+            </div>
+            <div class="stat-card">
+                <h4>Pendentes de Confirmação</h4>
+                <p id="stat-pending-count">0</p>
+            </div>
+        </div>
+
+        <!-- HISTÓRICO DE PIX -->
+        <div class="orders-header">
+            <h3>Registros de PIX Gerados</h3>
+            <button id="btn-refresh" class="btn-refresh">🔄 Atualizar Pagamentos</button>
+        </div>
+
+        <div id="orders-container" class="orders-grid">
+            <!-- Pagamentos serão inseridos aqui dinamicamente pelo JS -->
+        </div>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

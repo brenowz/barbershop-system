@@ -1,0 +1,215 @@
+.admin-body {
+    background-color: #121212;
+    color: #f1f1f1;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container de Login */
+.login-container {
+    max-width: 380px;
+    margin: 80px auto;
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #e5a93c;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: #2a2a2a;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.btn-admin {
+    width: 100%;
+    padding: 12px;
+    background-color: #e5a93c;
+    color: #000;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-admin:hover {
+    background-color: #d4982d;
+}
+
+.login-error {
+    color: #ff5555;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Dashboard de Pedidos */
+.dashboard-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: none;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px;
+}
+
+.admin-header h1 {
+    color: #e5a93c;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.btn-logout {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Cards de Métricas */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #e5a93c;
+}
+
+.stat-card h4 {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.stat-card p {
+    margin: 5px 0 0 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* Lista/Tabela de Pedidos */
+.orders-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.btn-refresh {
+    background: #2a2a2a;
+    color: #e5a93c;
+    border: 1px solid #e5a93c;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.orders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.order-card {
+    background: #1e1e1e;
+    border-radius: 8px;
+    padding: 15px;
+    border: 1px solid #333;
+    position: relative;
+}
+
+.order-card.pendente {
+    border-left: 5px solid #ffaa00;
+}
+
+.order-card.concluido {
+    border-left: 5px solid #00cc66;
+    opacity: 0.8;
+}
+
+.order-header-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.order-items-list {
+    margin: 10px 0;
+    padding-left: 18px;
+    color: #ddd;
+    font-size: 0.95rem;
+}
+
+.order-total {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #e5a93c;
+    margin-top: 10px;
+}
+
+.order-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-status {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-status.done {
+    background-color: #00cc66;
+    color: #fff;
+}
+
+.btn-status.pending {
+    background-color: #ffaa00;
+    color: #000;
+}
